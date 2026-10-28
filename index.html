@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 200px 200px 100px;
+
+    gap: 20px;
+}
+
+header {
+    grid-column: 1 / 5;
+    background: linear-gradient(120deg, #7254db, #9b83e9);
+}
+
+aside {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    background: linear-gradient(120deg, #32d1c7, #279f99);
+}
+
+.content1 {
+    grid-column: 2 / 5;
+    background: linear-gradient(120deg, #6555dc, #16b9f5);
+}
+
+.content2 {
+    grid-column: 2 / 3;
+    background: linear-gradient(120deg, #6555dc, #16b9f5);
+}
+
+.content3 {
+    grid-column: 3 / 5;
+    background: linear-gradient(120deg, #6555dc, #16b9f5);
+}
+
+footer {
+    grid-column: 1 / 5;
+    background: linear-gradient(120deg, #7254db, #9b83e9);
+}
+
+header, aside, .content1, .content2, .content3, footer {
+    border: 5px solid #111;
+    box-shadow: 0 5px 8px #222;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+    
+
+<div class="container">
+   <header>Header</header>
+   <aside>Sidebar</aside>
+    <div class="content1">Content1</div>
+    <div class="content2">Content2</div>
+    <div class="content3">Content3</div>
+    <footer>Footer</footer>
+</div>
+
+
+</body>
+</html>
